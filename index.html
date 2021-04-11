@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List app</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><span>C</span>hum</div>
+        <div class="menu">
+            <ul>
+                <li id="list-home"><a href="#">Home</a></li>
+                <li id="list-menu"><a href="#">Menu</a></li>
+                <li id="list-order"><a href="#">Order</a></li>
+                <li id="list-expert"><a href="#">Experts</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===========================================Create the Menu================================================== -->
+    <div class="containerOne">
+        <h2 class="ourMenu" id= "list-menu"><span>O</span>wn menu.</h2>
+        <div class="gridMenu">
+            <form action="#" autocomplete="off">
+                <h3>Create your own menu</h3>
+                <input type="text" name="food" id="food" placeholder="Name of your food..." required>
+                <br>
+                <input type="button" name="createMenu" id="createMenu" value="+Create">
+
+                <div>
+                    <input type="button" name="hide" id="hide" value="Hide information">
+                    <input type="button" name="show" id="show" value="Show information">
+                </div>
+            </form>
+            <div class="information">
+                <h3>Information</h3>
+                <div class="informationList"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ===========================================Input Order Information================================================== -->
+    <div class="containerTwo">
+        <h2 class="ourMenu" id= "list-menu"><span>O</span>rder food.</h2>
+        <div class="gridOrder">
+            <form action="#" autocomplete="off">
+                <h3>Order your Favourite food</h3>
+                <label>Name food order</label>
+                <br>
+                <input type="text" name="foodOrder"  placeholder="Favourite food..." id="foodOrder"  required>
+                <br>
+                <label>Number order</label>
+                <br>
+                <input type="number" name="numberOrder" id="numberOrder" placeholder="Number order..." required>
+                <br>
+                <label>Prices</label>
+                <br>
+                <input type="text" name="pricesOrder" id="pricesOrder" placeholder="Prices/number....$" required>
+                <br>
+                <label>Date</label>
+                <br>
+                <input type="date" name="dateOrder" id="dateOrder" required />
+                <br>
+                <input type="button" name="Order-btn" id="Order-btn" value="Order now">
+                <button id="update">Update</button>
+            </form>
+            
+        <!-- ==========================================Menu Order Food Information==================================== -->
+            <div class="informationOrder">
+                <h3>Information</h3>
+                <div class="gridInformation"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerThree">
+        <h2 class="ourMenu" id= "list-menu"><span>E</span>xpert cooker.</h2>
+        <div class="girdExpert">
+            <form action="#" autocomplete="off">
+                <h3>Complete his or her name</h3>
+                <div class="full-name">
+                    <div class="first-name">
+                        <input type="text" name="fname-expert" id="fname-expert" placeholder="First name" required>
+                    </div>
+                    <div class="last-name">
+                        
+                        <input type="text" name="lname-expert" id="lname-expert" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="age">
+                    <label>Ages</label>
+                    <input type="number" name="age" id="age" placeholder="His/Her age..." required>
+                </div>
+                <div class="country">
+                    <label>Country</label>
+                    <br>
+                    <select name="country" id="countryID">
+                        <option value="#">Chose country</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Benin">Benin</option>
+                        <option value="	Canada">Canada</option>
+                        <option value="	Cambodia">Cambodia</option>
+                        <option value="	France">France</option>
+                    </select>
+                </div>
+                <div class="phone">
+                    <label><i class="fa fa-phone"></i>Phone number</label>
+                    <br>
+                    <input type="number" name="phone" id="phone" placeholder="His/Her phone...." required>
+                </div>
+                <div class="email">
+                    <labe><i class="fa fa-envelope"></i>Email</labe>
+                    <br>
+                    <input type="emai" name="email" id="email" placeholder="His/Her email...." required>
+                </div>
+                <btn-expert>
+                    <input type="button" name="btn-expert" id="btn-expert" value="Submit">
+                </btn-expert>
+            </form>
+            <div class="informationExpert">
+                <h3>Information</h3>
+                
+                <div class="searchCooker">
+                    <input type="search" name="search" id="search" placeholder="Search....">
+                    <div class="box">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <!-- Display only name -->
+                <!-- Linst name of the cooker -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

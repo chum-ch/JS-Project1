@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
+/* ======================================================= The Menu ==================================================== */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Istok Web', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #dbd4d8;
+}
+.header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background:#f56666;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    margin: 0px 40px 0px 0px;
+}
+ul li {
+    list-style: none;
+    padding: 10px;
+}
+li a, .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+li a:hover {
+    color: #c7cfb7;
+}
+span {
+    color: rgb(9, 243, 48);
+    font-size: 35px;
+}
+
+/* ======================================================= The Container One ==================================================== */
+.containerOne {
+    display: none;
+    width:60%;
+    margin:0 auto;
+    background: #ffc7c7;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px #fdfdfd;
+}
+.containerOne h2 {
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+    background: rgb(79, 184, 245);
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    border-bottom: 1px solid snow;
+}
+.gridMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}.gridMenu form, .information{
+    width: 90%;
+    height: 100%;
+    margin:  10px auto;
+    padding: 10px;
+}
+
+.gridMenu form input[type="button"]{
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.gridMenu input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.information {
+    display: none;
+    width: 100%;
+}
+.informationList ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #a3d8f4;
+    border-radius: 5px;
+    color: #fff;
+    border-left: 3px solid #eee;
+    margin-bottom: 10px;
+}
+.informationList ul:hover {
+    background: rgba(41, 211, 241, 0.568);
+}
+h3 {
+    text-align: center;
+    color: rgb(247, 117, 84);
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.informationList i {
+    font-size: 30px;
+    color: #ffe1e1;
+    padding: 10px;
+    background: rgb(255, 0, 0);
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+.informationList i:hover{
+    background: rgb(233, 7, 7);
+}
+
+/* ======================================================= The Container Two ==================================================== */
+.containerTwo h2 {
+    text-align: center;
+    background: rgb(245, 145, 145);
+    color: #fff;
+    border-bottom: 1px solid snow;
+    border-radius: 8px 8px 0px 0px;
+}
+.containerTwo {
+    width: 60%;
+    background: rgb(151, 206, 252);
+    margin:20px auto;
+    box-shadow: 0px 7px 7px 0px #fdfdfd;
+    border-radius: 8px;
+}
+.containerTwo .gridOrder {
+    width: 100%;
+    display: flex;
+    box-sizing:border-box;
+    padding: 10px;
+}
+
+.gridOrder input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="button"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.gridOrder input[type="button"]{
+    font-size: 15px;
+}
+.gridOrder form, .informationOrder {
+    width: 100%;
+    padding: 10px;
+}
+.gridInformation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.mixThree {
+    width: 100%;
+    background: rgba(29, 191, 231, 0.959);
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.mixThree .price {
+    width: 30%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(245, 145, 145);
+    border-radius: 7px 0px 0px 7px;
+    border-left: 2px solid snow;
+    font-size: 30px;
+    
+}
+.price h4 {
+    font-size: 20px;
+    color: #dff8ab;
+}
+
+.mixThree .date-name{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.edit-delete .fa-trash{
+    width: 100%;
+    color: #fff;
+    background: rgba(255, 0, 0, 0.89);
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 0px 7px 0px 0px;
+}
+.edit-delete .fa-edit{
+    width: 100%;
+    font-size: 25px;
+    background: rgba(1, 67, 247, 0.301);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0px 0px 7px 0px;
+}
+.edit-delete .fa-trash:hover {
+    background: rgba(223, 11, 11, 0.966);
+    color: rgba(255, 255, 255, 0.911);
+}
+.edit-delete .fa-edit:hover {
+    background: rgba(1, 67, 247, 0.527);
+    color: rgba(255, 255, 255, 0.911);
+}
+#update {
+    width: 100%;
+    padding: 10px;
+    color: green;
+    display: none;
+    text-align: center;
+}
+/* ========================================Container Three============================== */
+.containerThree {
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+    background: #ffc7c7;
+    margin-top: 20px;
+    box-shadow: 3px 0px 5px #fafafa,
+                -3px 6px 5px #fafafa;
+    border-radius: 7px;
+    
+}
+.containerThree h2 {
+    text-align: center;
+    background: rgb(27, 170, 236);
+    color: snow;
+    border-bottom: 1px solid snow;
+    border-radius: 7px 7px 0px 0px;
+}
+.girdExpert h3 {
+    color: rgba(87, 84, 84, 0.959);
+    text-decoration: none;
+}
+.girdExpert {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.phone i, .email i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.phone i{
+    color: rgb(11, 243, 127);
+}
+.email i {
+    color: rgb(235, 98, 98);
+}
+#countryID{
+    width: 100%;
+    padding: 10px;
+}
+.girdExpert input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.girdExpert form, .informationExpert {
+    width: 100%;
+    margin:0 auto;
+    padding: 20px;
+}
+.girdExpert form {
+    width: 100%;
+    padding: 20px;
+}
+
+.full-name {
+    display: flex;
+    justify-content: space-between;
+}
+.girdExpert form input[type="button"]{
+    width: 30%;
+    margin-top: 5px;
+    float: right;
+}
+.searchCooker {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.searchCooker .box {
+    width: 50px;
+    height: 42px;
+    background: rgb(28, 106, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 2px;
+    margin-top: -10px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+.box:hover {
+    background: rgb(36, 88, 230);
+}
+
+.aboutU {
+    background: rgba(230, 171, 171, 0.911);
+    margin-bottom: 15px;
+    border-radius: 7px 0px 0px 7px;
+    border-left: 2px solid #4587eb;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.aboutU:hover {
+    background: rgba(243, 181, 181, 0.726);
+}
+.aboutU .box-color {
+    width: 100px;
+    background: rgb(236, 96, 14);
+    border-radius: 5px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 5px;
+}
+.aboutU h4 {
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color:rgb(28, 106, 250);
+}
+.aboutU h4:hover {
+    color:rgb(25, 89, 207);
+}
+.aboutU .box-color, p {
+    cursor: pointer;
+}
+.aboutU i {
+    width: 50px;
+    height: 40px;
+    background: red;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    cursor: pointer;
+    color: #eee;
+}
+.aboutU i:hover {
+    background: rgb(233, 9, 9);
+}
+/* =============================table================ */
+table {
+    width: 100%;
+    font-family: sans-serif;
+    display: none;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+    background: rgb(199, 182, 182);
+    text-align: center;
+}
+tr, th, td {
+    width: 5%;
+    border: 1px solid rgb(247, 230, 230);
+    padding: 10px;
+    margin: 0 auto;
+}
+table thead{
+    background: rgba(235, 169, 169, 0.89);
+    color: rgb(255, 255, 255);
+}
+thead #secret {
+    background: rgb(192, 113, 113);
+}
+#closeTable {
+    float: right;
+    padding: 5px;
+    width: 100px;
+    margin: -45px auto;
+    display: none;
+}
+/* =============================================================== */
+.mouseOver {
+    background: rgba(148, 141, 141, 0.664);
+    z-index: 9;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px 10px 0px 10px;
+    border: 1px solid #2d2e2e;
+    position: absolute;
+    top:  -70px;
+    left: -30px;
+    transform: rotate(5deg);
+    transition: 1.5s;
+    opacity: 0;
+}
